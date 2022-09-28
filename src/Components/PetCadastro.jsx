@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function PetCadastro() {
-    return (
+  return (
       <div>
           <form method="post">
               <div>
