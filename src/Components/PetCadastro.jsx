@@ -1,23 +1,46 @@
 import React from 'react'
 
 export default function PetCadastro() {
-
-    // const [petCadastro, setPetCadastro] = useState([
-    //     {
-    //       "nome" : "Tobby",
-    //       "idade" : "2 anos",
-    //       "raca":"lulu da pomerania",
-    //       "tamanho" : "30cm",
-    //       "nome do dono" : "Joaquim",
-    //       "imagem do pet":"img",
-    //       "observacoes":"Muito bagunceiro"
-    //     }
-    // ])
-
   return (
-    <>
-        <h1>FormCadastroPet</h1>
-        <p>aqui vai o form para cadastro pet.</p>
-    </>
-  )
-}
+      <div>
+          <form method="post">
+              <div>
+                  <label>Nome </label>
+                  <input type="text" name="titulo"/>
+              </div>
+              <div>
+                  <label>Idade </label>
+                  <input type="text" name="setor"/>
+              </div>
+              <div>
+                  <label>Raça </label>
+                  <input type="text "name="descricao"></input>
+              </div>
+              <div>
+                  <label>Tamanho </label>
+                  <input type="text "name="descricao"></input>
+              </div>
+              <div>
+                  <label>Nome do dono </label>
+                  <input type="text "name="descricao"></input>
+              </div>
+             
+              <div>
+                  <label>Telefone do dono </label>
+                  <input type="text "name="descricao"></input>
+              </div>
+              <div>
+                  <label>Imagem do pet </label>
+                  <input type="text "name="descricao"></input>
+              </div> 
+              <div>
+                  <label>Observações </label>
+                  <textarea name="observacoes" cols="30" rows="5"></textarea>
+              </div> 
+              <div> 
+                  <button type="submit">Adicionar</button>
+              </div>
+          </form>
+      </div>
+    )
+  }
