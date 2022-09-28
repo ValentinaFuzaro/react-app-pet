@@ -4,7 +4,7 @@ import PetCadastro from './Components/PetCadastro';
 export default function App() {
   return (
     <>
-        <h1>App Pet!</h1>
+        <h1>Dados do PET!</h1>
         <PetCadastro/>
     </>
   )
