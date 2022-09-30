@@ -1,5 +1,9 @@
 import React,{ useState } from 'react'
+//import PetCadastro from './PetCadastro'
+import { DivCadastro } from '../style/styled'
 import FormPetCadastro from '../Components/FormPetCadastro'
+
+
 export default function PetCadastro() {
 
     const [cadastro, setCadastro] = useState([
@@ -74,7 +78,7 @@ export default function PetCadastro() {
 
 
   return (
-        <div>
+        <DivCadastro>
             <FormPetCadastro 
                 add={addCadastro}
                 cadastro={cadastro}
@@ -94,6 +98,6 @@ export default function PetCadastro() {
                 <button onClick={removerCadastro.bind(this,cad)}><h1>APAGAR</h1></button>
                 </div>
             )}
-        </div>
+        </DivCadastro>
     )
   }
