@@ -1,6 +1,9 @@
 import React,{ useState } from 'react'
-import FormPetCadastro from '../Components/FormPetCadastro'
+//import PetCadastro from './PetCadastro'
 import { DivCadastro } from '../style/styled'
+import FormPetCadastro from '../Components/FormPetCadastro'
+
+
 export default function PetCadastro() {
 
     const [cadastro, setCadastro] = useState([
