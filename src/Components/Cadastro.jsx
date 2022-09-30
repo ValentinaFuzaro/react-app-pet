@@ -15,8 +15,6 @@ export default function PetCadastro() {
       }
     ])
 
-    const [image, setImage] = useState('')
-
     const [nCadastro, setNCadastro] = useState({
       "nome":"",
       "idade":"",
@@ -38,7 +36,6 @@ export default function PetCadastro() {
       setCadastro([...cadastro, nCadastro])
     }
 
-
     const setChanges = (e)=>{
       e.preventDefault()
 
@@ -57,11 +54,14 @@ export default function PetCadastro() {
       }else if(name === "telefoneDono"){
         setNCadastro({"nome":nCadastro.nome,"idade":nCadastro.idade,"raca":nCadastro.raca,"tamanho":nCadastro.tamanho,"nomeDono":nCadastro.nomeDono,"telefoneDono":value,"imagemPet":nCadastro.imagemPet,"observacoes":nCadastro.observacoes})
       }else if(name === "imagemPet"){
-        setNCadastro({"nome":nCadastro.nome,"idade":nCadastro.idade,"raca":nCadastro.raca,"tamanho":nCadastro.tamanho,"nomeDono":nCadastro.nomeDono,"telefoneDono":nCadastro.telefoneDono,"imagemPet":value,"observacoes":nCadastro.observacoes})
+        const file = {
+            fileContent: e.target.files[0],
+            picture: URL.createObjectURL(e.target.files[0])
+        }
+        setNCadastro({"nome":nCadastro.nome,"idade":nCadastro.idade,"raca":nCadastro.raca,"tamanho":nCadastro.tamanho,"nomeDono":nCadastro.nomeDono,"telefoneDono":nCadastro.telefoneDono,"imagemPet":file.picture,"observacoes":nCadastro.observacoes})
       }else if(name === "observacoes"){
         setNCadastro({"nome":nCadastro.nome,"idade":nCadastro.idade,"raca":nCadastro.raca,"tamanho":nCadastro.tamanho,"nomeDono":nCadastro.nomeDono,"telefoneDono":nCadastro.telefoneDono,"imagemPet":nCadastro.imagemPet,"observacoes":value})
       }
-
     }
 
     const removerCadastro = (tar)=>{
@@ -89,7 +89,7 @@ export default function PetCadastro() {
                 <p>{cad.tamanho}</p>
                 <p>{cad.nomeDono}</p>
                 <p>{cad.telefoneDono}</p>
-                <p>{cad.imagemPet}</p>
+                <img alt='imagePet' src={cad.imagemPet}></img>
                 <p>{cad.observacoes}</p>
                 <button onClick={removerCadastro.bind(this,cad)}><h1>APAGAR</h1></button>
                 </div>
