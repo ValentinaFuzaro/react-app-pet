@@ -1,11 +1,11 @@
 import React from 'react'
-import PetCadastro from './Components/PetCadastro';
+import Cadastro from './Components/Cadastro';
 
 export default function App() {
   return (
     <>
         <h1>Dados do PET!</h1>
-        <PetCadastro/>
+        <Cadastro/>
     </>
   )
 }
