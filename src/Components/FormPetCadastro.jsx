@@ -5,44 +5,66 @@ export default function FormPetCadastro(props) {
 
   return (
       <DivFormPetCadastro>
-          <form method="post" onSubmit={props.add}>
+            <h3>--------------- Cadastre seu PET aqui! --------------- </h3>
+            <form method="post" onSubmit={props.add}>
               <div>
-                  <label>Nome </label>
-                  <input type="text" name="nome" placeholder='Digite o nome do seu pet' value={props.cadastro.nome} onChange={props.onChange}/>
+                  <label>Nome: </label>
+                  <input type="text" name="nome" 
+                  placeholder='Como o pet se chama?' 
+                  value={props.cadastro.nome} 
+                  onChange={props.onChange}/>
               </div>
               <div>
-                  <label>Idade </label>
-                  <input type="text" name="idade" placeholder='Digite a idade do seu pet' value={props.cadastro.idade} onChange={props.onChange}/>
+                  <label>Idade: </label>
+                  <input type="text" name="idade" 
+                  placeholder='Digite a idade do bichinho' 
+                  value={props.cadastro.idade} 
+                  onChange={props.onChange}/>
               </div>
               <div>
-                  <label>Raça </label>
-                  <input type="text "name="raca" placeholder='Digite a raça do seu pet' value={props.cadastro.raca} onChange={props.onChange}/>
+                  <label>Raça: </label>
+                  <input type="text" name="raca" 
+                  placeholder='Qual a raça do seu pet?' 
+                  value={props.cadastro.raca} 
+                  onChange={props.onChange}/>
               </div>
               <div>
-                  <label>Tamanho </label>
-                  <input type="text "name="tamanho" placeholder='Coloque a altura seu pet' value={props.cadastro.tamanho} onChange={props.onChange}/>
+                  <label>Tamanho: </label>
+                  <input type="text" name="tamanho" 
+                  placeholder='Qual é a altura do pet?' 
+                  value={props.cadastro.tamanho} 
+                  onChange={props.onChange}/>
               </div>
               <div>
-                  <label>Nome do dono </label>
-                  <input type="text "name="nomeDono" placeholder='Coloque o nome do dono' value={props.cadastro.nomeDono} onChange={props.onChange}/>
+                  <label>Nome do dono: </label>
+                  <input type="text" name="nomeDono" 
+                  placeholder='O pet manda em quem?' 
+                  value={props.cadastro.nomeDono} 
+                  onChange={props.onChange}/>
               </div>
              
               <div>
-                  <label>Telefone do dono </label>
-                  <input type="text "name="telefoneDono" placeholder='Digite o telefone do dono' value={props.cadastro.telefoneDono} onChange={props.onChange}/>
+                  <label>Seu telefone: </label>
+                  <input type="text" name="telefoneDono" 
+                  placeholder='Digite o telefone do dono' 
+                  value={props.cadastro.telefoneDono} 
+                  onChange={props.onChange}/>
               </div>
               <div>
-                  <label>Imagem do pet </label>
-                  <input type="file"name="imagemPet" value={props.cadastro.imagemPet} onChange={props.onChange}/>
+                  <label>Imagem do pet: </label>
+                  <input type="file" name="imagemPet" 
+                  value={props.cadastro.imagemPet} 
+                  onChange={props.onChange}/>
               </div> 
               <div>
                   <label>Observações </label>
-                  <textarea name="observacoes" cols="30" rows="5" value={props.cadastro.observaçoes} onChange={props.onChange} />
+                  <textarea name="observacoes" cols="15" rows="5" 
+                  value={props.cadastro.observaçoes} onChange={props.onChange} />
               </div> 
               <div> 
                   <button type="submit">Cadastrar</button>
               </div>
-          </form>
+            </form>
       </DivFormPetCadastro>
     )
   }
