@@ -33,9 +33,14 @@ export default function PetCadastro() {
     const addCadastro = (e)=>{
       e.preventDefault()
       setNCadastro({
-        "titulo":"",
-        "setor":"",
-        "descricao":""
+        "nome":"",
+        "idade":"",
+        "raca":"",
+        "tamanho":"",
+        "nomeDono":"",
+        "telefoneDono":"",
+        "imagemPet":"",
+        "observacoes":""
       })
       setCadastro([...cadastro, nCadastro])
     }
