@@ -13,7 +13,7 @@ export default function Cadastro(props) {
             <p>{props.cadastro.telefoneDono}</p>
             <p>{props.cadastro.imagemPet}</p>
             <p>{props.cadastro.observacoes}</p>
-            <button onClick={props.remover}><h1>APAGAR</h1></button>
+            <button onClick={props.remover}>APAGAR</button>
         </DivPetCadastro>
     );
 }

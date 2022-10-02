@@ -4,30 +4,31 @@ import styled from 'styled-components'
   width: 100%;
   min-height: 85vh;
   padding: 20px;
-  background-color: #00fa9a;
+  background-color: #A4FFC9; //00fa9a;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  button{
-    padding: 5px 20px;
-    align-self: start;
-    text-align: center;
-    color: orange;
-  }
   `
   
   export const DivPetCadastro = styled.div`
-    background-color: white;
-    border: solid 1px #333;
-    box-shadow: 5px 5px 5px #333;
-    padding: 20px;
-    width: 400px;
-    height: 400px;
-    margin: 1px;
+    background-color: #F3BDFF;
+    border: solid 1px #F3BDFF;
+    box-shadow: 5px 5px 5px #fff;
+    padding: 5px;
+    text-align: center;
+    width: 300px;
+    height: 360px;
+    margin: 10px;
   h2,
   p {
-    padding-bottom: 200px;
+    padding-bottom: 1px;
   }
+  button{
+      padding: 10px 50px;
+      align-self: start;
+      text-align: center;
+      color: orange;
+    }
 `
 
 export const DivFormPetCadastro = styled.div`
