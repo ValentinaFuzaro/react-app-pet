@@ -8,26 +8,25 @@ import styled from 'styled-components'
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  button{
+    padding: 5px 20px;
+    align-self: start;
+    text-align: center;
+    color: orange;
+  }
   `
   
   export const DivPetCadastro = styled.div`
-  background-color: blueviolet;
-  border: solid 1px #333;
-  box-shadow: 5px 5px 5px #333;
-  padding: 20px;
-  text-align: left;
-  width: 250px;
-  height: 200px;
-  margin: 10px;
+    background-color: white;
+    border: solid 1px #333;
+    box-shadow: 5px 5px 5px #333;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    margin: 1px;
   h2,
   p {
     padding-bottom: 200px;
-  }
-  button{
-    padding: 15px 50px;
-    align-self: start;
-    text-align: center;
-    color: black;
   }
 `
 

@@ -5,7 +5,7 @@ export default function FormPetCadastro(props) {
 
   return (
       <DivFormPetCadastro>
-            <h3>--------------- Cadastre seu PET aqui! --------------- </h3>
+            <h3>--------------- Cadastre seu PET aqui! ---------------</h3>
             <form method="post" onSubmit={props.add}>
               <div>
                   <label>Nome: </label>
