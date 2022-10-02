@@ -1,5 +1,5 @@
 import React from 'react'
-import { DivPetCadastro } from '../style/styled';
+import { DivPetCadastro } from '../style/styled'
 
 export default function Cadastro(props) {
 
@@ -15,5 +15,5 @@ export default function Cadastro(props) {
             <p>{props.cadastro.observacoes}</p>
             <button onClick={props.remover}>APAGAR</button>
         </DivPetCadastro>
-    );
+    )
 }

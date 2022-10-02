@@ -45,7 +45,7 @@ export default function PetCadastro() {
       setCadastro([...cadastro, nCadastro])
     }
 
-    const setChanges = (e)=>{
+    const captura = (e)=>{
       e.preventDefault()
 
       const{ name , value } = e.target
@@ -74,38 +74,26 @@ export default function PetCadastro() {
     }
 
     const removerCadastro = (tar)=>{
-
       let lista = cadastro
-  
       lista = lista.filter((t)=> t !== tar) 
       setCadastro(lista)
     }
 
-
   return (
     <DivCadastro>
       <FormPetCadastro 
-        add={addCadastro}
-        cadastro={cadastro}
-        onChange={setChanges}
+        addCadastro={addCadastro}
+        cadastro={nCadastro}
+        onChange={captura}
       />
-
-      <Cadastro>
-        {cadastro.map((cad,i)=>
-          <div key={i}>
-          <h2>{cad.nome}</h2>
-          <p>{cad.idade}</p>
-          <p>{cad.raca}</p>
-          <p>{cad.tamanho}</p>
-          <p>{cad.nomeDono}</p>
-          <p>{cad.telefoneDono}</p>
-          <img alt='imagePet' src={cad.imagemPet}></img>
-          <p>{cad.observacoes}</p>
-          <button onClick={removerCadastro.bind(this,cad)}><h1>APAGAR</h1></button>
-          </div>
-        )}
-
-      </Cadastro>
+        
+      {cadastro.map((tar,i)=>
+        <Cadastro
+          key = {i}
+          cadastro = {tar}
+          remover = {removerCadastro.bind(this,tar)}
+        />
+      )}
     </DivCadastro>  
   )
 }

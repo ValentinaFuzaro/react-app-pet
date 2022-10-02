@@ -4,7 +4,7 @@ import styled from 'styled-components'
   width: 100%;
   min-height: 85vh;
   padding: 20px;
-  background-color: #A4FFC9; //00fa9a;
+  background-color: #A4FFC9; 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
